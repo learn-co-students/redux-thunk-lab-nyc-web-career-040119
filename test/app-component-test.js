@@ -42,7 +42,7 @@ describe('<App/>', function() {
 		};
 
 		const mockStore = configureStore([]);
-		const initialState = { cats: { loading: false, cats: [] } };
+		const initialState = { cats: { loading: false, pictures: [] } };
 		const store = createStore(rootReducer, applyMiddleware(thunk));
 		const wrapper = mount(
 			<Provider store={store}>
